@@ -9,9 +9,13 @@ gem 'rails', '4.1.7'
 gem 'sprockets-rails', '2.1.3'
 # Use sqlite3 as the database for Active Record
 
+group :production do
+  gem 'pg'
+end
 
-gem 'sqlite3'
-
+group :development do
+  gem 'sqlite3'
+end
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
