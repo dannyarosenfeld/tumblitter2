@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/thoughtbot/paperclip.git
-  revision: 76f825a8b616fabf8bfba433ac3107e1b1a079ae
+  revision: 4b5a364ab8ecb329d54e7e2eed216595698f458f
   specs:
     paperclip (4.3.1)
       activemodel (>= 3.2.0)
@@ -39,7 +39,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
-    autoprefixer-rails (6.2.1)
+    autoprefixer-rails (6.2.3)
       execjs
       json
     bcrypt (3.1.10)
@@ -73,7 +73,6 @@ GEM
     factory_girl_rails (4.5.0)
       factory_girl (~> 4.5.0)
       railties (>= 3.0.0)
-    ffaker (2.1.0)
     hike (1.2.3)
     i18n (0.7.0)
     jbuilder (1.5.3)
@@ -113,7 +112,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
-    rdoc (4.2.0)
+    rdoc (4.2.1)
       json (~> 1.4)
     ref (2.0.0)
     responders (1.1.2)
@@ -179,7 +178,6 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise
   factory_girl_rails
-  ffaker
   jbuilder (~> 1.2)
   jquery-rails
   jquery-ui-rails
