@@ -12,6 +12,7 @@ gem 'sprockets-rails', '2.1.3'
 group :production do
   gem 'pg'
   gem 'aws-sdk'
+  gem 'rails_12factor'
 end
 
 group :development do
