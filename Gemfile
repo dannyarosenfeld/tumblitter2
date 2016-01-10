@@ -11,6 +11,7 @@ gem 'sprockets-rails', '2.1.3'
 
 group :production do
   gem 'pg'
+  gem 'aws-sdk'
 end
 
 group :development do
