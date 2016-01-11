@@ -29,4 +29,17 @@ Tumblful::Application.configure do
 
   # see Controller filters and helpers at: https://github.com/plataformatec/devise
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+ #added paperclip settings to here i did this danny
+config.paperclip_defaults = {
+  storage: :s3,
+  s3_host_name: 's3-ap-southeast-1.amazonaws.com',
+  s3_credentials: {
+    bucket: ENV['AWS_S3_BUCKET'],
+    s3_region: ENV['S3_REGION'],
+    access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+    secret_access_key: ENV['AWS_SECRET_ACCESS_KEY']
+  }
+}
+
 end

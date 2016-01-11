@@ -11,9 +11,15 @@ gem 'sprockets-rails', '2.1.3'
 
 group :production do
   gem 'pg'
-  gem 'aws-sdk'
+  
   gem 'rails_12factor'
+
 end
+
+gem 'aws-sdk', '< 2.0'
+
+
+gem 'figaro'
 
 group :development do
   gem 'sqlite3'

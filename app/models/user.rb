@@ -22,12 +22,18 @@ class User < ActiveRecord::Base
 
 
 
+
+
+  #      :path => ":rails_root/public/system/:attachment/:id/:basename_:style.:extension",
+   #     :url => "/system/:attachment/:id/:basename_:style.:extension",
+#put above 2 lines between :avatar, and :styles => {
+
+
+
 #paperclip gem storing avatar images
   has_attached_file :avatar, 
-
-        :path => ":rails_root/public/system/:attachment/:id/:basename_:style.:extension",
-        :url => "/system/:attachment/:id/:basename_:style.:extension",
-        :styles => {
+          :bucket => 'bucket_name',
+          :styles => {
           :thumb    => ['100x100#',  :jpg, :quality => 70],
          :preview  => ['480x480#',  :jpg, :quality => 70],
          :large    => ['600>',      :jpg, :quality => 70],
