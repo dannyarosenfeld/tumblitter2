@@ -9,6 +9,7 @@ gem 'rails', '4.1.7'
 gem 'sprockets-rails', '2.1.3'
 # Use sqlite3 as the database for Active Record
 
+gem 'aws-sdk', '< 2.0'
 group :production do
   gem 'pg'
   
@@ -16,7 +17,7 @@ group :production do
 
 end
 
-gem 'aws-sdk', '< 2.0'
+
 
 
 gem 'figaro'
