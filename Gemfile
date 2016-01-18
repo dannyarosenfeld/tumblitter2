@@ -10,6 +10,9 @@ gem 'sprockets-rails', '2.1.3'
 # Use sqlite3 as the database for Active Record
 
 gem 'aws-sdk', '< 2.0'
+
+
+
 group :production do
   gem 'pg'
   
@@ -62,9 +65,9 @@ end
 # Use Devise for authentication: https://github.com/plataformatec/devise#getting-started
 gem 'devise'
 
-gem 'paperclip', github: 'thoughtbot/paperclip'
+#gem 'paperclip', github: 'thoughtbot/paperclip'
 
-
+gem 'paperclip', '4.3.0'
 
 
 group :development, :test do
