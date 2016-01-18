@@ -32,7 +32,7 @@ class User < ActiveRecord::Base
 
 #paperclip gem storing avatar images
   has_attached_file :avatar, 
-          :bucket => 'bucket_name',
+          #:bucket => 'bucket_name',
           :styles => {
           :thumb    => ['100x100#',  :jpg, :quality => 70],
          :preview  => ['480x480#',  :jpg, :quality => 70],
