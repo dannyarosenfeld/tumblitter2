@@ -94,7 +94,7 @@ Tumblful::Application.configure do
   #}
 #}
 
-
+#test to see if this is on github tumblitter now
 
 config.paperclip_defaults = {
   :storage => :s3,
