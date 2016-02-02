@@ -9,9 +9,25 @@ gem 'rails', '4.1.7'
 gem 'sprockets-rails', '2.1.3'
 # Use sqlite3 as the database for Active Record
 
+gem 'aws-sdk', '< 2.0'
 
-gem 'sqlite3'
 
+
+group :production do
+  gem 'pg'
+  
+  gem 'rails_12factor'
+
+end
+
+
+
+
+gem 'figaro'
+
+group :development do
+  gem 'sqlite3'
+end
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
@@ -49,9 +65,15 @@ end
 # Use Devise for authentication: https://github.com/plataformatec/devise#getting-started
 gem 'devise'
 
+<<<<<<< HEAD
 gem 'paperclip', github: 'thoughtbot/paperclip'
 
 gem 'aws-sdk', '< 2.0'
+=======
+#gem 'paperclip', github: 'thoughtbot/paperclip'
+
+gem 'paperclip', '4.3.0'
+>>>>>>> 07470d718532d5a1bae06bfd644a668b62a9d4e5
 
 
 group :development, :test do
@@ -60,7 +82,8 @@ group :development, :test do
   # Use Factory Girl for Active Record sample instance object creation: https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md
   gem 'factory_girl_rails'
   # Use FFaker for random seed generation: https://github.com/EmmanuelOga/ffaker
-  gem 'ffaker'
+
+#  gem 'ffaker'
   # Use Shoulda Matchers for validation and association testing: https://github.com/thoughtbot/shoulda-matchers
   gem 'shoulda-matchers'
 end

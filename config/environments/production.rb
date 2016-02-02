@@ -20,7 +20,10 @@ Tumblful::Application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
-  config.serve_static_assets = false
+  config.serve_static_assets = true
+
+
+#I changed this shit righti hhhhhhhhhhhhhhhhere to true
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -79,15 +82,40 @@ Tumblful::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
 
+<<<<<<< HEAD
 # config/environments/production.rb
 config.paperclip_defaults = {
   :storage => :s3,
   :s3_credentials => {
     :bucket => ENV['S3_BUCKET_NAME'],
+=======
+  #I added this thingy!
+#config.paperclip_defaults = {
+ # storage: :s3,
+  #s3_host_name: 's3-ap-southeast-1.amazonaws.com',
+  #s3_credentials: {
+   # bucket: ENV['AWS_S3_BUCKET'],
+   # s3_region: ENV['S3_REGION'],
+   # access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+   # secret_access_key: ENV['AWS_SECRET_ACCESS_KEY']
+  #}
+#}
+
+#test to see if this is on github tumblitter now
+
+config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => ENV['AWS_BUCKET'],
+>>>>>>> 07470d718532d5a1bae06bfd644a668b62a9d4e5
     :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
     :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
   }
 }
 
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 07470d718532d5a1bae06bfd644a668b62a9d4e5
 end

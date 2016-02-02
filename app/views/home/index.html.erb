@@ -21,7 +21,7 @@
   </head>
 
   <body id="main_back">
-    <ul class="cb-slideshow" style="list-style-type: none;">
+    <ul class="cb-slideshow"> <!-- style="list-style-type: none;" -->
       <li><span>Image 01</span></li>
       <li><span>Image 02</span></li>
       <li><span>Image 03</span></li>
@@ -48,6 +48,41 @@
     <p>Distillery everyday carry literally venmo quinoa. Four dollar toast food truck shoreditch humblebrag austin pop-up. Kogi bespoke kitsch semiotics, shabby chic knausgaard dreamcatcher. Sriracha flannel ugh aesthetic, chillwave waistcoat thundercats humblebrag etsy listicle. Narwhal jean shorts ennui, truffaut gluten-free hella street art intelligentsia blog. Sign up for tumblitter its awesome! </p>
     </div>
 
+
+<!--
+
+<%#= form_for(@user, multipart: true) do |f| %>
+  <div class="field">
+    <%#= f.label :name %>
+    <%#= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%#= f.label :avatar %>
+    <%#= f.file_field :avatar %>
+  </div>
+  <div class="actions">
+    <%#= f.submit 'Make a friend' %>
+    
+  </div>
+<%# end %>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="col-md-3 col-md-offset-1 margin-top-40">
       <%= render :partial => 'sign_up_right' %>
     </div>
@@ -66,3 +101,4 @@
     <%= render 'layouts/footer' %>
   </body>
 </html>
+<script src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"> </script>
