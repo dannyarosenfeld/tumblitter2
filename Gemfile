@@ -65,15 +65,15 @@ end
 # Use Devise for authentication: https://github.com/plataformatec/devise#getting-started
 gem 'devise'
 
-<<<<<<< HEAD
-gem 'paperclip', github: 'thoughtbot/paperclip'
+
+#gem 'paperclip', github: 'thoughtbot/paperclip'
 
 gem 'aws-sdk', '< 2.0'
-=======
+
 #gem 'paperclip', github: 'thoughtbot/paperclip'
 
 gem 'paperclip', '4.3.0'
->>>>>>> 07470d718532d5a1bae06bfd644a668b62a9d4e5
+
 
 
 group :development, :test do
